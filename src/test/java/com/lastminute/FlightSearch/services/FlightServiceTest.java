@@ -75,7 +75,7 @@ public class FlightServiceTest
     @BeforeClass
     public static void onceExecutedBeforeAll() {
         log.finer("@BeforeClass: onceExecutedBeforeAll");
-        List<List<String>> prices = CsvFiles.readAllRecords(RESOURCEDIRECTORY.toAbsolutePath()+"\\"+CSV);	    
+        List<List<String>> prices = CsvFiles.readAllRecords(RESOURCEDIRECTORY.toAbsolutePath()+"/"+CSV);	    
         flights = LoadDataUtility.loadFlights(prices);	
     	airPortList = LoadDataUtility.loadAirPorts();
     	airLineList = LoadDataUtility.loadAirlines();

@@ -45,7 +45,7 @@ public class LoadDataUtility {
 		
 		 BufferedReader br = null;
 		 List<Flight> flightList = new ArrayList<>();
-		 List<List<String>> prices = CsvFiles.readAllRecords(RESOURCEDIRECTORY.toAbsolutePath()+"\\"+CSV);	    
+		 List<List<String>> prices = CsvFiles.readAllRecords(RESOURCEDIRECTORY.toAbsolutePath()+"/"+CSV);	    
 		 flightList = LoadDataUtility.loadFlights(prices);	
 	     log.info("Load "+flightList.size() + " Flights");
 	     return flightList;
